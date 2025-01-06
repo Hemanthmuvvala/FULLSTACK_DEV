@@ -1,1 +1,57 @@
-
+<-- this is  about creating the tables and merging the cells -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<h2>HTML Tables Demonstration.</h2>
+<h3>Basic Table</h3>
+<table border="2" cellpadding="10" cellspacing="0" height="100px" width="500px">
+    <tr align="center">
+        <th>Column 1</th>
+        <th>Column 2</th>
+        <th>Column 3</th>
+        </tr>
+        <tr align="center">
+            <td>row1,cell 1</td>
+            <td>row2,cell 2</td>
+            <td>row3,cell 3</td>
+        </tr>
+        <tr align="center">
+            
+            <td>row2,cell 1</td>
+            <td>row2,cell 2</td>
+            <td>row2,cell 3</td>
+        </tr>
+    
+</table>
+<h3>Table with Rowspan and Colspan</h3>
+<table border="2" cellpadding="10" cellspacing="0" height="100px" width="500">
+    <tr>
+        <th>Header 1</th>
+        <th>Header 2</th>
+        <th>Header 3</th>
+    </tr>
+    <tr align="center">
+        <td rowspan="2">row1,cell 1</td>
+        <td>row2,cell 2</td>
+        <td>row3,cell 3</td>
+    </tr>
+    <tr align="center">
+        
+        
+        <td colspan="2">row 2,merged cells</td>
+        
+    </tr>
+    <tr align="center" >
+        
+        <td>row2,cell 1</td>
+        <td>row2,cell 2</td>
+        <td>row2,cell 3</td>
+    </tr>
+    </table>
+</body>
+</html>
