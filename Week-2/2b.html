@@ -1,115 +1,96 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        h1 {
-            margin-left: 300px;
-        }
-        table {
-            border-collapse: collapse;
-            text-align: center;
-        }
-        th {
-            border: 1px solid black;
-            background-color: rgb(125, 127, 115);
-        }
-        .subject {
-            width: 50%;
-            float: left;
-        }
-        .faculty {
-            width: 50%;
-            float: right;
-        }
-    </style>
 </head>
 <body>
-    <h1 >TIME TABLE</h1>
-    <table border="1" cellpadding="10" cellspacing="0">
-        <tr>
-            <th>Period</th>
+    <table border="2" cellpadding="10" cellspacing="0"> 
+        <tr style="background-color: rgb(211, 220, 222);">
+            <th>period</th>
             <th>1</th>
             <th>2</th>
             <th>3</th>
             <th>4</th>
-            <th rowspan="2" style="color: blue">12:40-1:40</th>
+            <th rowspan="" >--</th>
             <th>5</th>
             <th>6</th>
             <th>7</th>
             <th>8</th>
         </tr>
-        <tr style="color: blue">
-            <th style="color: black">Day</th>
+        <tr >
+            <th style="background-color: rgb(211, 220, 222);">Day</th>
             <th>9:00-9:50</th>
             <th>9:50-10:40</th>
             <th>11:00-11:50</th>
             <th>11:50-12:40</th>
+            <th>12:40-1:40</th>
             <th>1:40-2:30</th>
             <th>2:30-3:20</th>
             <th>3:20-4:10</th>
             <th>4:10-5:00</th>
         </tr>
-        <tr>
-            <th>Monday</th>
-            <td>P&S</td>
-            <td>OS</td>
-            <td>SE</td>
-            <td>ADSAA</td>
-            <td rowspan="6">L<br>U<br>N<br>C<br>H</td>
-            <td>MEFA</td>
-            <td colspan="2">DT&I</td>
-            <td>CRT</td>
+<tr>
+<th style="background-color: rgb(211, 220, 222);">Mon</th>
+<td>SE</td>
+<td>ADSAA</td>
+<td>MEFA</td>
+<td>OS</td>
+<td rowspan="8">LUNCH</td>
+<td colspan="3">II CSE-C FSD</td>
+<td>CRT</td>
+</tr>
+<tr>
+    <th style="background-color: rgb(211, 220, 222);">TUE</th>
+    <td colspan="2">II CSE-C FSD</td>
+    <td>ADSAA</td>
+    <td>P&S</td>
+    <td>MEFA</td>
+    <td>OS</td>
+    <td>SE</td>
+    <td>CRT</td>
+    </tr>
+    <tr>
+        <th style="background-color: rgb(211, 220, 222);">WED</th>
+        <td>ADSAA</td>
+        <td colspan="3" align="center">OS LAB</td>
+        <td>SE</td>
+        <td>P&S</td>
+        <td>OS</td>
+        <td>MEFA</td>
         </tr>
         <tr>
-            <th>Tuesday</th>
-            <td>OS</td>
-            <td colspan="3">ADSAA LAB</td>
-            <td>SE</td>
+            <th style="background-color: rgb(211, 220, 222);">THU</th>
+            <td>MEFA</td><td>CRT</td>
             <td>P&S</td>
-            <td>MEFA</td>
-            <td>CRT</td>
-        </tr><tr>
-            <th>Wednasday</th>
-            <td>MEFA</td>
-            <td>SE</td>
-            <td>P&S</td>
-            <td>ADSAA</td>
-            <td>OS</td>
-            <td>MEFA&I</td>
-            <td colspan="2">DT&I</td>
-        </tr><tr>
-            <th>Thrusday</th>
-            <td>ADSAA</td>
-            <td>OS</td>
-            <td>SE</td>
-            <td>P&S</td>
-            <td colspan="3">OS LAB</td>
-            <td>CRT</td>
-        </tr><tr>
-            <th>Friday</th>
             <td>FSD</td>
-            <td>ADSAA</td>
-            <td>MEFA</td>
             <td>OS</td>
+            <tD>ADSAA</tD>
             <td>P&S</td>
-            <td>ADSAA</td>
             <td>SE</td>
-            <td>CRT</td>
-        </tr><tr>
-            <th>Saturaday</th>
-            <td>SE</td>
-            <td colspan="3">FSD</td>
-            <td>ADSAA</td>
-            <td>P&s</td>
-            <td>OS</td>
-            <td>MEFA</td>
-        </tr>
+            </tr>
+            <tr>
+                <th style="background-color: rgb(211, 220, 222);">FRI</th>
+                <td>OS</td>
+                <tD>ADSAA</tD>
+                <td>P&S</td>
+                <td>SE</td>
+                <td>MEFA</td>
+                <td colspan="2">FSD</td>
+                <td>CRT</td>
+                </tr>
+                <tr>
+                    <th style="background-color: rgb(211, 220, 222);">SAT</th>
+                    <td>P&S</td>
+                    <tD>ADSAA</tD>
+                    <td>SE</td>
+                    <td>MEFA</td>
+                    <td>OS</td>
+                    <td colspan="3">ADSAA LAB</td>
+                    </tr>
     </table>
-    <div class="container">
+
         <div class="subject">
             <h2>Subject</h2>
             <p>MEFA Managerial Economics and Financial Analysis</p>
@@ -117,26 +98,17 @@
             <p>OS Operations Systems</p>
             <p>ADSAA Advanced Data Structures and Algorithms</p>
             <p>SE Software Engineering</p>
-            <p>OS LAB Operations Systems Lab</p>
+            <p>
+            </style>OS LAB Operations Systems Lab</p>
             <p>ADSAA LAB Advanced Data Structures and Algorithms Lab</p>
             <p>FSD Fundamentals of Software Development</p>
             <p>DT&I Data Technology and Informatics</p>
             <p><br>CRT Computer and Network Security</p>
         </div>
-        <div class="faculty">
-            <h2>Faculty</h2>
-            <p>Dr. K.Pavan</p>
-            <p>Mrs. K.G.R Deepthi</p>
-            <p>Mr. M. V. Durga Rao</p>
-            <p>Mr. M. Durga Satish</p>
-            <p>Ms. Ch. Sai Lalitha</p>
-            <p>Mrs. A. Ravathi</p>
-            <p>Ms. M. Durga Satish</p>
-            <p>Mrs. B. V. Prasanthi</p>
-            <p>Dr. Abhinav Dayal<br>Mrs. P. Krishna Madhuri</p>
-            <p>Mr. J. Muni Partha</p>
+        
+
+
+
         </div>
-    </div>
-    <h3 style="text-align: center;">Class Teacher: Mrs. A. Revathi</h3>
 </body>
 </html>
