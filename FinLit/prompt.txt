@@ -1,0 +1,45 @@
+
+**Goal:** Generate the HTML, CSS, and JavaScript code for a user-friendly website for a financial literacy AI assistant, focusing on a specific core feature (e.g., conversational AI chatbot, personalized learning, or simplified product recommendation).
+
+**Target Feature:** [Specify ONE core feature. Examples: Conversational AI Chatbot, Basic Personalized Learning, Simplified Mutual Fund Recommendation]
+
+**Website Structure:**
+
+* **Header:** Include a website title (e.g., "FinLit AI"), a brief tagline (e.g., "Your AI-powered Financial Guide"), and navigation links (e.g., "Learn," "Invest," "About").
+* **Main Content Area:** This is where the core feature will be prominently displayed.
+* **Footer:** Include copyright information and links to contact, privacy policy, etc.
+
+**Specific Requirements:**
+
+* **Conversational AI Chatbot (if selected):**
+    * Display a chat window prominently.
+    * Use a clear and friendly chatbot avatar.
+    * Implement basic chat functionality: user types a message, chatbot responds.
+    * The chatbot responses should be placeholder text for now (e.g., "I'm still learning about that!").  We will connect it to a real chatbot API later.
+* **Basic Personalized Learning (if selected):**
+    * Include a simple "Financial Knowledge Quiz" with 3-5 multiple-choice questions.
+    * Based on the user's answers, display a personalized learning module (e.g., a short article or video) relevant to their knowledge gaps.  Use placeholder content for the learning module.
+* **Simplified Mutual Fund Recommendation (if selected):**
+    * Include a form with 2-3 input fields: "Investment Amount," "Risk Tolerance" (e.g., low, medium, high).
+    * Upon submission, display a simplified recommendation for a mutual fund (e.g., "Based on your input, we recommend [Mutual Fund Name].  (This is a sample recommendation)").
+
+**Styling and Design:**
+
+* **Clean and Modern Design:** Use a professional-looking design with a focus on readability and usability.
+* **Mobile Responsive:** Ensure the website looks good and functions correctly on all devices (desktops, tablets, and smartphones).
+* **Color Palette:** [Suggest a color palette or leave it open-ended: e.g., "Use a calming and trustworthy color palette," or "Use blues and greens."]
+* **Fonts:** [Suggest font families or leave it open-ended: e.g., "Use a clear and readable font," or "Use sans-serif fonts."]
+
+**Technical Requirements:**
+
+* **HTML:** Use semantic HTML5 elements.
+* **CSS:** Use CSS for styling.  Consider using a CSS framework like Bootstrap or Tailwind CSS for rapid development.
+* **JavaScript:** Use JavaScript for interactivity (e.g., handling form submissions, displaying chatbot responses).  Keep the JavaScript code simple and well-commented.
+
+**Output Format:**
+
+* Generate the complete HTML, CSS, and JavaScript code for the website.
+* The code should be well-formatted and easy to understand.
+* Include comments to explain the different parts of the code.
+//functionalities
+add functionality to the learn button that consists of options like stocks,bank,mutualfunds, policies,insurances when selected one option they can choose one.
