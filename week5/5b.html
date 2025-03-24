@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Image Effect</title>
+    <style>
+        body {
+            margin: 0;
+            height: 200vh; /* Extra height to enable scrolling */
+            background-image: url('your-image.jpg'); /* Replace with your image URL */
+            background-position: center 50%; /* Centered horizontally, halfway down the page */
+            background-repeat: no-repeat;
+            background-size: contain; /* Adjust the size as needed */
+            background-attachment: fixed; /* Keeps the image in place while scrolling */
+            transform: scaleX(-1); /* Flips the image horizontally */
+        }
+
+        h1 {
+            text-align: center;
+            padding-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Scroll Down to See the Background Effect</h1>
+</body>
+</html>
