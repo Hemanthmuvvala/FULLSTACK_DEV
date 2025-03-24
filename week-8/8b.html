@@ -1,85 +1,46 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
     <style>
-        *{
+        body {
             text-align: center;
-            font-weight: bolder;
+        }
 
-        }
-        div{
-            display: flex;
-            gap:20px;
-            flex-direction: row;
-            margin-left: 40vw;
-        }
-        button{
-            padding: 10px 25px 10px 25px;
-            font-size: large;
-            border: 3px solid black;
-            animation-name: color;
-            animation-duration: 7s;
-            background-color: brown;
-            cursor: pointer;
+        #hi {
+            background-color: rgb(0, 153, 255);
+            color: white;
 
-        }
-        @keyframes color{
-            from {background-color: brown;}
-            to {background-color: blueviolet;}
-        }
-        button:hover{
-            background-color: rgb(59, 230, 7);
-        }
-        p{
-            padding: 10px;
-            background-color: gray;
-            border: 3px solid black; 
-            font-size: large;
         }
     </style>
-</head>
-<body>
-    <h1>Weeks Days using  Switch Case</h1>
-    <div>
-        <button onclick="Days()">Enter Number</button>
-        <p id="A">Click the button to enter a number</p>
-    </div>
     <script>
-        function Days(){
-            let a = parseInt(prompt("enter a number(1-7) for the day of the week:"));
-            let reply;
-            switch(a){
-                case 1:
-                    reply="Monday";
+        function hello() {
+            var a = prompt("enter a number (1-7) for the day of the week")
+            switch (a) {
+                case "1": document.getElementById("naveen").innerHTML = "Monday";
                     break;
-                case 2:
-                    reply= "Tuesday";
+                case "2": document.getElementById("naveen").innerHTML = "Tuesday";
                     break;
-                case 3:
-                    reply= "wednesday";
+                case "3": document.getElementById("naveen").innerHTML = "Wednesday";
                     break;
-                case 4:
-                    reply= "Thursday";
+                case "4": document.getElementById("naveen").innerHTML = "Thursday";
                     break;
-                case 5:
-                    reply = "Friday";
+                case "5": document.getElementById("naveen").innerHTML = "Friday";
                     break;
-                case 6:
-                    reply = "Saturday";
+                case "6": document.getElementById("naveen").innerHTML = "Saturday";
                     break;
-                case 7:
-                    reply = "Sunday";
+                case "7": document.getElementById("naveen").innerHTML = "Sunday";
                     break;
-                default:
-                    reply = "enter valid number betweeen 1-7";
-
+                default: alert("enter correct number");
 
             }
-            document.getElementById("A").innerHTML = `${reply}`;
         }
     </script>
+</head>
+
+<body>
+    <h1><b>Week Days Using Switch Case</b></h1>
+    <button id="hi">Enter Number</button>
+    <button onclick="hello()" id="naveen">click the button to enter a number</button>
 </body>
+
 </html>
