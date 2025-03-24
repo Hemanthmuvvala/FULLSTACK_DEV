@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week Days using Switch Case</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+        #output {
+            margin-top: 20px;
+            padding: 10px;
+            border: 2px solid #007BFF;
+            background-color: #f0f8ff;
+            font-size: 18px;
+            font-weight: bold;
+            display: inline-block;
+            color: #007BFF;
+        }
+        button {
+            padding: 10px 15px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            background-color: #007BFF;
+            color: white;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Week Days using Switch Case</h1>
+    <button onclick="showWeekday()">Enter Number</button>
+    <div id="output">Click the button to enter a number.</div>
+
+    <script>
+        function showWeekday() {
+            let dayNumber = parseInt(prompt("Enter a number (1-7) for the day of the week:"));
+
+            let dayName;
+            switch (dayNumber) {
+                case 1: dayName = "Sunday"; break;
+                case 2: dayName = "Monday"; break;
+                case 3: dayName = "Tuesday"; break;
+                case 4: dayName = "Wednesday"; break;
+                case 5: dayName = "Thursday"; break;
+                case 6: dayName = "Friday"; break;
+                case 7: dayName = "Saturday"; break;
+                default: dayName = "Invalid input! Please enter a number between 1 and 7.";
+            }
+
+            document.getElementById("output").innerHTML = dayName;
+        }
+    </script>
+
+</body>
+</html>
