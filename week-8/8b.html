@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            text-align: center;
+            font-weight: bolder;
+
+        }
+        div{
+            display: flex;
+            gap:20px;
+            flex-direction: row;
+            margin-left: 40vw;
+        }
+        button{
+            padding: 10px 25px 10px 25px;
+            font-size: large;
+            border: 3px solid black;
+            animation-name: color;
+            animation-duration: 7s;
+            background-color: brown;
+            cursor: pointer;
+
+        }
+        @keyframes color{
+            from {background-color: brown;}
+            to {background-color: blueviolet;}
+        }
+        button:hover{
+            background-color: rgb(59, 230, 7);
+        }
+        p{
+            padding: 10px;
+            background-color: gray;
+            border: 3px solid black; 
+            font-size: large;
+        }
+    </style>
+</head>
+<body>
+    <h1>Weeks Days using  Switch Case</h1>
+    <div>
+        <button onclick="Days()">Enter Number</button>
+        <p id="A">Click the button to enter a number</p>
+    </div>
+    <script>
+        function Days(){
+            let a = parseInt(prompt("enter a number(1-7) for the day of the week:"));
+            let reply;
+            switch(a){
+                case 1:
+                    reply="Monday";
+                    break;
+                case 2:
+                    reply= "Tuesday";
+                    break;
+                case 3:
+                    reply= "wednesday";
+                    break;
+                case 4:
+                    reply= "Thursday";
+                    break;
+                case 5:
+                    reply = "Friday";
+                    break;
+                case 6:
+                    reply = "Saturday";
+                    break;
+                case 7:
+                    reply = "Sunday";
+                    break;
+                default:
+                    reply = "enter valid number betweeen 1-7";
+
+
+            }
+            document.getElementById("A").innerHTML = `${reply}`;
+        }
+    </script>
+</body>
+</html>
