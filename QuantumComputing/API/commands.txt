@@ -1,0 +1,5 @@
+// In your Flutter code, change the apiUrl to:
+final String apiUrl = "https://quantum-visualizer.onrender.com/examples/plus_states";
+// or
+final String apiUrl = "https://quantum-visualizer.onrender.com/examples/excited_states";
+// or any other endpoint
